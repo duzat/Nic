@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>O nosso felizes para sempre</title>
+
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=MedievalSharp&family=GFS+Didot&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper:#f3e8c9;
+    --paper-deep:#e8d9b2;
+    --ink:#2b1f1a;
+    --accent:#7a0b13;
+    --gold:#b08932;
+  }
+
+  *{box-sizing:border-box; padding:0; margin:0}
+
+  body{
+    min-height:100svh;
+    display:grid;
+    place-items:center;
+    background: radial-gradient(1600px 800px at 50% 0%, #e7dcc0 0%, #d8c8a2 35%, #bda87b 100%);
+    color:var(--ink);
+  }
+
+  .frame{
+    position:relative;
+    width:min(920px, 92vw);
+    padding:18px;
+    border:8px solid #5b472a;
+    outline:3px solid #2e2414;
+    background:
+      linear-gradient(135deg, #604b2b 0 10px, #4c3b22 10px 20px, #3d301b 20px),
+      repeating-linear-gradient(90deg, #5a4629 0 24px, #6a552f 24px 48px);
+    box-shadow: 0 20px 50px rgba(0,0,0,.45), inset 0 0 0 3px #d2b277;
+    border-radius: 14px;
+    animation: arrive .9s ease-out both;
+  }
+  @keyframes arrive{ from{ transform:translateY(30px) scale(.98); opacity:0 } to{ transform:translateY(0) scale(1); opacity:1 } }
+
+  .paper{
+    position:relative;
+    padding:56px 56px 120px;
+    background: linear-gradient(180deg, var(--paper), var(--paper-deep));
+    border-radius:12px;
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,.08), inset 0 0 60px rgba(0,0,0,.12);
+    overflow:hidden;
+  }
+
+  .ornament{
+    position:absolute; inset:18px;
+    border:2px solid rgba(176,137,50,.55);
+    border-radius:10px;
+    animation: shimmer 6s linear infinite;
+  }
+  @keyframes shimmer{0%,100%{box-shadow:inset 0 0 0 2px rgba(176,137,50,.4)}50%{box-shadow:inset 0 0 14px 2px rgba(176,137,50,.35)}}
+
+  h1{
+    font-family:"UnifrakturMaguntia", serif;
+    font-size: clamp(36px, 6vw, 56px);
+    text-align:center;
+    margin-bottom:24px;
+    color:#301a12;
+    text-shadow:0 1px 0 #f9efd6,0 2px 0 #e6d7b3,0 3px 6px rgba(0,0,0,.25);
+  }
+
+  .letter{
+    font-family:"GFS Didot", serif;
+    font-size: clamp(18px, 2.2vw, 22px);
+    line-height:1.8;
+    text-align: justify;
+    text-indent: 1.5em;
+  }
+  .letter p:first-child::first-letter{
+    font-family:"UnifrakturMaguntia", serif;
+    float:left;
+    font-size: 3.2em;
+    line-height:.9;
+    margin-right:.18em;
+    color:#2d1b15;
+  }
+
+  /* ASSINATURA ANIMADA */
+  .signature-anim{
+    margin-top:40px;
+    text-align:center;
+  }
+  svg{
+    width: 100%;
+    max-width: 850px;
+  }
+  path{
+    fill:none;
+    stroke:#2b1f1a;
+    stroke-width:2px;
+    stroke-dasharray:2000;
+    stroke-dashoffset:2000;
+    animation: escrever 8s ease forwards;
+  }
+  text{
+    font-family:'Great Vibes', cursive;
+    font-size:52px;
+    fill:#2b1f1a;
+    opacity:0;
+    animation: aparecer 2s ease forwards;
+    animation-delay:8s;
+  }
+  @keyframes escrever{to{stroke-dashoffset:0}}
+  @keyframes aparecer{to{opacity:1}}
+
+  .seal{
+    position:absolute;
+    right: 24px; bottom: 22px;
+    width:82px; height:82px;
+    background: radial-gradient(circle at 30% 30%, #b61b26, #7a0b13 70%);
+    border-radius:50%;
+    box-shadow: inset -8px -10px 16px rgba(0,0,0,.35),0 6px 16px rgba(0,0,0,.35);
+  }
+  .seal::after{
+    content:"❤";
+    position:absolute; inset:0;
+    display:grid; place-items:center;
+    font-size:34px; color:#f7d6d8;
+  }
+
+  .actions{margin-top:14px; text-align:center}
+  .btn{
+    font-family:"MedievalSharp", serif;
+    padding:10px 16px;
+    border:2px solid var(--gold);
+    border-radius:8px;
+    background:linear-gradient(180deg, #f8eccc, #ead8a8);
+    cursor:pointer;
+  }
+</style>
+</head>
+<body>
+
+  <div class="frame">
+    <div class="paper">
+      <div class="ornament"></div>
+      <h1>O nosso felizes para sempre</h1>
+      <div class="letter">
+        <p>
+          Cada dia ao seu lado transformou minha vida em um lugar melhor. Cada minuto com você faz nascer uma rosa dentro de mim. Seus olhos me transportam para um infinito do qual jamais quero sair. Há um ano e seis meses tive a oportunidade de demonstrar meu amor por você e conhecer o seu amor por mim — e não me arrependo de nada; ao contrário, a cada dia me apaixono ainda mais.
+        </p>
+        <p>
+          Meu amor, eu lhe amo infinitamente. Amo tanto você que o meu maior desejo é construir uma vida inteira ao seu lado. Conheci todas as suas versões, e em cada uma delas encontrei ainda mais motivos para me apaixonar. Dentro de mim não existe nada além de amor por você.
+        </p>
+        <p>
+          Você é o sol que faz minhas flores florescerem; o amor da minha vida; a mulher de quem tenho orgulho ao ver crescer e melhorar a cada dia. Você é a razão do meu amor, da minha alegria, do meu sorriso e do meu querer. É muito mais do que apenas minha namorada: é minha alma, meu lar, meu bem.
+        </p>
+        <p>
+          Feliz nosso um ano e seis meses, meu amor. Minha vida é um paraíso com você, e tudo o que aconteceu até aqui só serviu para me mostrar que quero você ainda mais — por todos os dias do resto da minha vida. Meu amor por você é mais profundo que o oceano e tão lindo quanto os seus olhos.
+        </p>
+      </div>
+      <div class="signature-anim">
+        <svg viewBox="0 0 1200 200">
+          <path d="M50 150 C150 50, 350 250, 500 120 C650 0, 850 220, 1100 80" />
+          <text x="60" y="140">Carlos Eduardo Peres Paulista Gouveia</text>
+        </svg>
+      </div>
+      <div class="seal"></div>
+    </div>
+  </div>
+</body>
+</html>
